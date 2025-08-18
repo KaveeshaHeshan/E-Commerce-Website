@@ -1,0 +1,99 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff; /* or transparent if you want */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.nav-log {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-log img {
+  height: 80px;     /* keep logo small */
+  width: auto;      /* maintain aspect ratio */
+  object-fit: contain;
+}
+
+.nav-log p {
+  font-size: 20px;
+  font-weight: bold;
+  color: #222;
+}
+
+/* ===== Center Menu ===== */
+.nav-menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;    /* center items horizontally */
+  align-items: center;        /* align vertically */
+  gap: 40px;                  /* more spacing between items */
+  margin: 0 auto;
+  padding: 0;
+}
+
+.nav-menu li {
+  position: relative;
+  font-weight: 700;           /* thicker text */
+  font-size: 18px;            /* bigger size */
+  padding: 10px 18px;         /* more clickable area */
+  color: #1d2433;
+  cursor: pointer;
+  border-radius: 6px;         /* soft edges for button feel */
+  transition: color .25s ease, transform .25s ease, background .25s ease;
+}
+
+/* underline animation */
+.nav-menu li::after {
+  content: "";
+  position: absolute;
+  left: 0; bottom: -6px;
+  width: 0%; height: 3px;     /* thicker underline */
+  background: #0bb37f;
+  transition: width .25s ease;
+  border-radius: 2px;
+}
+
+.nav-menu li:hover {
+  color: #0bb37f;
+  background: rgba(11, 179, 127, 0.08); /* subtle background on hover */
+  transform: translateY(-2px);
+}
+
+.nav-menu li:hover::after {
+  width: 100%;
+}
+
+.nav {
+  /* styles for nav */
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.login {
+  /* styles specific to login */
+}
+
+.cart {
+  /* styles specific to cart */
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+
+
